@@ -15,7 +15,6 @@ import {
   } from "@material-ui/icons";
   import { useState } from "react";
   import { makeStyles } from "@material-ui/core";
-  import TimelineCronograma from "./TimelineCronograma";
   
   const useStyles = makeStyles((theme) => ({
     root: {
@@ -67,7 +66,6 @@ import {
       <div>
         <Button onClick={() => setOpen(true)}>Click me</Button>
        
-        <TimelineCronograma />
         <Drawer
           className={classes.root}
           open={open}

@@ -3,7 +3,7 @@ import {
     VerticalTimelineElement,
   } from "react-vertical-timeline-component";
   import "react-vertical-timeline-component/style.min.css";
-  
+
   function TimelineCronograma() {
     const dados = [
       {
@@ -47,6 +47,8 @@ import {
       <VerticalTimeline>
         {dados.map((value, index) => {
           return (
+            <>
+            
             <VerticalTimelineElement
               key={index}
               className="vertical-timeline-element--work"
@@ -72,6 +74,8 @@ import {
               <h4 className="vertical-timeline-element-subtitle">{value.data}</h4>
               <p>{value.descricao}</p>
             </VerticalTimelineElement>
+           
+            </>
           );
         })}
       </VerticalTimeline>
